@@ -27,7 +27,7 @@ class Artist
     new_artist
   end
 
-  def add_song
+  def add_song(name)
   end
 
 end
