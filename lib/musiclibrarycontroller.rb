@@ -34,14 +34,13 @@ class MusicLibraryController
       else
         call
       end
-
   end
 
   def list_songs
-  sorted_library = self.library.sort_by {|song|song.name}
-  sorted_library.each do |song|
+    sorted_library = self.library.sort_by {|song|song.name}
+    sorted_library.each do |song|
     puts "#{sorted_library.index(song) + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+    end
   end
-end
 
 end
