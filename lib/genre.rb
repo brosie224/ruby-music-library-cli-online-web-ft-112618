@@ -27,4 +27,8 @@ class Genre
     new_genre
   end
 
+  def artists
+
+  end
+
 end
