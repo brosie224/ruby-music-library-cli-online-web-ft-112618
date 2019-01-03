@@ -28,8 +28,15 @@ class Song
   end
 
   def artist=(artist)
-    @artist = artist
-    artist.add_song(self)
+    if @artist == nil
+      @artist = artist
+    else
+      @artist = @artist
+    end
+    if self.artist != nil
+      @artist.add_song(self)
+    end
+    @artist
   end
 
 end
